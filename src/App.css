@@ -1,42 +1,136 @@
-#root {
-  max-width: 1280px;
+*{
+ box-sizing: border-box;
+}
+.contianer{
   margin: 0 auto;
-  padding: 2rem;
+  width: 1440px;
+  height: 1024px;
+  display: flex;
+  background-color: #FFFFFF;
+  color: black;
+  position: relative;
+}
+
+.arrow-div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 61px 56px 0;
+  text-decoration: none;
+}
+
+img{
+  position: absolute;
+  right: 0;
+}
+/* Form Styling */
+  /* top text */
+.top-text{
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.top-text h1{
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 153.023%;
+  margin-top: 86px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.top-text p{
+  font-size: 22px;
+  line-height:  153.023%;
+  font-weight: 400;
+  margin-bottom: 58px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.main-data{
+  width: 999px;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container-data{
+  margin-left: 182px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 153.023%;
 }
 
-.card {
-  padding: 2em;
+input{
+  width: 634px;
+  height: 65px;
+  flex-shrink: 0;
+  margin-bottom: 35px;
+  border-radius: 8px;
+  background: #EBE9E9;
+  border-style: none;
+  color: #000;
+  font-size: 16px;
+  padding: 20px;
+}
+button{
+  width: 634px;
+  padding: 20px 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 153.023%; 
+  border-radius: 8px;
+  background: #2ACFCF;
+  border-style: none;
+  cursor: pointer;
+  margin-top: 22px;
 }
 
-.read-the-docs {
-  color: #888;
+/* Bottom text styling */
+.bottom-text{
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 5px;
+}
+.bottom-text .signUp{
+color: #ff0000;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 153.023%;
+}
+
+.forgot{
+  color: red;
+  text-decoration: none;
+}
+
+
+/* Sign Up Section Styling */
+.name-section{
+  display: flex;
+  gap: 44px;
+}
+.name-section input{
+  width: 295px;
+  height: 65px;
+  flex-shrink: 0;
+}
+/* forgot password section */
+
+.forgot-text p{
+  display: flex;
+  flex-direction: column;
+}
+.Back2{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600; 
+}
+.text3{
+  margin-top: 53px;
+}
+.leftarrow{
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
