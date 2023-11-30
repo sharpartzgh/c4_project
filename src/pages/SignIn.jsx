@@ -12,7 +12,7 @@ const SignIn = () => {
           {/* the back arrow section */}
         <div className='arrow-div'>
             <FiArrowLeft className='leftarrow' style={{color:'#BFBFBF'}}/>
-            <NavLink to='/SignIn' style={{color:'#000', textDecoration:'none', fontWeight:'600'}}>Back</NavLink>
+            <NavLink to='/' style={{color:'#000', textDecoration:'none', fontWeight:'600'}}>Back</NavLink>
         </div>
         {/* the main form section container and it contents */}
         <div className="top-text">

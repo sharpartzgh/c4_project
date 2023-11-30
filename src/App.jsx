@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignIn from './pages/SignIn.jsx';
 import SignUp from './pages/SignUp.jsx';
 import ForgotPassword from './pages/ForgotPassword.jsx';
+import Homepage from './pages/Homepage.jsx';
 
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path='/' element={<Homepage/>} />
         <Route path="/SignIn" element={<SignIn />} />
         <Route path='/SignUp' element={<SignUp />} />
         <Route path='/ForgotPassword' element={<ForgotPassword />} />

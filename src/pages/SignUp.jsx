@@ -11,10 +11,10 @@ const SignUp = () => {
     <div className='contianer'>
     <div className="main-data">
         {/* the back arrow section */}
-      <div className='arrow-div'>
-          <FiArrowLeft style={{color:'#BFBFBF'}}/>
-          <span>Back</span>
-      </div>
+        <div className='arrow-div'>
+            <FiArrowLeft className='leftarrow' style={{color:'#BFBFBF'}}/>
+            <NavLink to='/SignIn' style={{color:'#000', textDecoration:'none', fontWeight:'600'}}>Back</NavLink>
+        </div>
       {/* the main form section container and it contents */}
       <div className="top-text">
         <h1>Sign Up</h1>
