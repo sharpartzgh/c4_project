@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap');
 
 .hero{
-  margin: 50px auto;
+  margin: 30px auto;
   display: flex;
   align-items: center;
   position: relative;
+  height: 599px;
 }
 .first-div{
   margin-left: 15%;
-  margin-top: 50px;
 }
 .first-div h1{
   font-family: 'Roboto', sans-serif;
@@ -31,7 +31,5 @@
 }
 .second-div img{
   flex: 0;
-  width: 700px;
+  margin-top: 40px;
 }
-
-

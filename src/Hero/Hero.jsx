@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 import heroDivImage from '../assets/images/illustration-working.svg'
 
 const Hero = () => {
-  
+
   const SignUp = {
     textDecoration: 'none',
     color: 'white',
@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="first-div">
         <h1>More than just <br />shorter links</h1>
         <p>Build your brand recognition and get detailed <br /> insights on how your links are performing</p>
-          <NavLink to='/SignIn' style={SignUp}>Get Started</NavLink>
+        <NavLink to='/SignIn' style={SignUp}>Get Started</NavLink>
       </div>
       <div className="second-div">
       <img src={heroDivImage} alt="working-image" />
