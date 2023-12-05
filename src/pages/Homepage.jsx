@@ -3,6 +3,8 @@ import React from 'react'
 import TitleBar from '../Header/TitleBar'
 import Hero from '../Hero/Hero'
 import ShortLinkSection from '../ShortLink/ShortLinkSection'
+import Boost from '../Boost/Boost'
+import Footer from '../Footer/Footer'
 
 const Homepage = () => {
   return (
@@ -10,6 +12,8 @@ const Homepage = () => {
       <TitleBar/>
       <Hero/>
       <ShortLinkSection />
+      <Boost/>
+      <Footer />
     </div>
   )
 }
