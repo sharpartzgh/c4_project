@@ -5,6 +5,7 @@ import Hero from '../Hero/Hero'
 import ShortLinkSection from '../ShortLink/ShortLinkSection'
 import Boost from '../Boost/Boost'
 import Footer from '../Footer/Footer'
+import AdvacedStats from '../Advance/AdvacedStats'
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
       <TitleBar/>
       <Hero/>
       <ShortLinkSection />
+      <AdvacedStats/>
       <Boost/>
       <Footer />
     </div>

@@ -17,6 +17,8 @@ const ShortLinkSection = () => {
     <div className='shortLinks'>
       <div className="image-div">
       </div>
+      <div className="image-div2">
+      </div>
       <div className='short-div'>
         <form action="" className='flex-within' onSubmit={handleSubmit}>
             <label htmlFor="website" className='bg-input'>

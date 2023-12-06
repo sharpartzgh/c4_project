@@ -1,0 +1,96 @@
+.advanced-container{
+  /* background-color: #F0F1F6; */
+}
+.Ads-section{
+  height: 60rem;
+  background-color: #F0F1F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ad-stats-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0;
+  
+}
+.ad-stats-text h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+}
+.ad-stats-text p{
+  line-height: normal;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: gray;
+  margin-bottom: 8rem;
+}
+
+.ad-stats-cards{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem; 
+  text-align: left;  
+  border-radius: 5px;
+  width: 75%;
+  padding: 20px;
+}
+.ad-stats-cards h4{
+  font-size: 30px;
+}
+.card-img {
+  align-self: start;
+  position: absolute;
+  border: 1px solid red;
+}
+
+
+.records-card {
+  position: relative;
+  top: 50px;
+  background-color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 0rem 2rem 2rem;
+}
+
+.customizable-card {
+  position: relative;
+  top: 100px; 
+  background-color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 0rem 2rem 2rem;
+}
+
+.recognition-card{
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 0em 2rem 2rem;
+}
+
+.card-img {
+  background: #383153;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+}
+
+.card-img img {
+  width: 32px;
+  aspect-ratio: 3/3;
+  object-fit: contain;
+}

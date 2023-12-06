@@ -23,7 +23,7 @@
   position: absolute;
   inset: 0 0;
   margin: 0 auto;
-  width: 62.2%;
+  width: 57.8%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -66,7 +66,7 @@ label .btn{
 .addLink{
   position: absolute;
   inset: 85% 0 0 0;
-  margin-left: 400px;
+  margin-left: 460px;
   margin-top: 100px;
   font-size: 18px;
   color: rgba(236, 64, 64, 0.904);
