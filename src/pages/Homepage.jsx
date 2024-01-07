@@ -11,11 +11,11 @@ const Homepage = () => {
   return (
     <div>
       <TitleBar/>
-      <Hero/>
-      <ShortLinkSection />
-      <AdvacedStats/>
-      <Boost/>
-      <Footer />
+      {/* <Hero/> */}
+      {/* <ShortLinkSection /> */}
+      {/* <AdvacedStats/> */}
+      {/* <Boost/> */}
+      {/* <Footer /> */}
     </div>
   )
 }
