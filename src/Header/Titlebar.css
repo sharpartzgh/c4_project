@@ -1,26 +1,4 @@
 :root{
   color: black;
 }
-.firstcontainer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-ul{
-  display: flex;
-  gap: 20px;  
-}
 
-.logo-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.btn ul{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-nav h1{
-  font-size: 35px;
-}

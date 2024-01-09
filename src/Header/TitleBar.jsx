@@ -1,8 +1,10 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
-import './TitleBar.css'
 import { NavLink } from 'react-router-dom'
+import { MdMenu } from "react-icons/md";
+
+
 
 
 /* eslint-disable no-unused-vars */
@@ -13,6 +15,12 @@ const TitleBar = () => {
   const [isPricing, setPricing] = useState(false);
   const [isResources, setResources] = useState(false);
   const [isLogin, setLogin] = useState(false);
+  const [isMenu, setMenu] = useState(false);
+
+//display menu on moble when clicked
+const handleMenu = () => {
+  setMenu(!isMenu);
+};
 
   const LinkStyle = {
     textDecoration: 'none',
@@ -63,39 +71,41 @@ const TitleBar = () => {
 
 
 
-  const SignUp = {
-    textDecoration: 'none',
-    color: 'white',
-    fontSize: '18px',
-    fontWeight: 'bold',
-    borderRadius: '25px',
-    backgroundColor: '#2ACFCF',
-    width: '100px',
-    padding: '5px',
-    textAlign: 'center',
-  }
-  
 
   return (
-   <header>
-      <div className="header-container">
-        <div className="logo-container">
-            <nav className='firstcontainer'>
-              <h1>Shortly</h1>
-              <ul>
+   <header className='m-auto w-full flex justify-between py-4 px-10 sm:m-auto  items-center'>
+    <div className='flex items-center gap-10'>
+      <h1 className=' text-[30px] font-extrabold'>Shortly</h1>
+        <nav className='desktop-menu sm:hidden '>
+            <ul className=' sm:hidden flex gap-5 '>
               <NavLink to='/' style={{...LinkStyle, ...feature}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >Features</NavLink>
-                <NavLink to='/'  style={{...LinkStyle, ...Pricing}} onMouseEnter={PricingMouseEnter} onMouseLeave={PricingMouseLeave} >Pricing</NavLink>
-                <NavLink to='/'  style={{...LinkStyle, ...Resources}} onMouseEnter={ResourcesMouseEnter} onMouseLeave={ResourcesMouseLeave}>Resources</NavLink>
-              </ul>
-            </nav> 
-            <div className='btn'>
-              <ul> 
-              <NavLink to='/SignIn' style={{...LinkStyle, ...Login}} onMouseEnter={LoginMouseEnter} onMouseLeave={LoginMouseLeave} >Login</NavLink>
-                <NavLink to='/SignUp' style={SignUp}>Sign Up</NavLink>
-              </ul>
-            </div>
-        </div> 
+              <NavLink to='/'  style={{...LinkStyle, ...Pricing}} onMouseEnter={PricingMouseEnter} onMouseLeave={PricingMouseLeave} >Pricing</NavLink>
+              <NavLink to='/'  style={{...LinkStyle, ...Resources}} onMouseEnter={ResourcesMouseEnter} onMouseLeave={ResourcesMouseLeave}>Resources</NavLink>
+            </ul>
+        </nav>
+    </div>
+    <div className=' '>
+          <ul className='flex gap-3 items-center  sm:hidden'> 
+            <NavLink to='/SignIn' style={{...LinkStyle, ...Login}} onMouseEnter={LoginMouseEnter} onMouseLeave={LoginMouseLeave} >Login</NavLink>
+            <NavLink to='/SignUp' className=' bg-[#2ACFCF] font-bold rounded-3xl py-1 px-5 text-white'>Sign Up</NavLink>
+          </ul>
       </div>
+      <div className=" tablet:hidden" onClick={handleMenu}>
+          <MdMenu className=' text-gray-400 w-8 h-16 cursor-pointer'/>
+      </div>
+      <div className='mobile-menu w-full rounded bg-[#3A3053] sm:hidden tablet:hidden'>
+      <nav>
+        <ul className=' flex flex-col gap-3 items-center font-bold text-white py-5 px-2'>
+            <NavLink to='/'>Features</NavLink>
+            <NavLink to='/' >Pricing</NavLink>
+            <NavLink to='/'>Resources</NavLink>
+            <hr className=' w-full'/>
+            <NavLink to='/SignIn' >Login</NavLink>
+            <NavLink to='/SignUp' className=' bg-[#2ACFCF] font-bold rounded-3xl py-1 px-5 text-white'>Sign Up</NavLink>
+        </ul>
+      </nav> 
+      </div>
+      
    </header>
   )
 }
