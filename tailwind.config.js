@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      "Roboto": ['Roboto']
+    },
      screens: {
 
       'sm': {'min': '234px', 'max': '640px'},
@@ -20,7 +23,11 @@ export default {
       // => @media (min-width: 1280px) 
 
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero": "url(src/assets/images/illustration-working.svg)"
+      }
+    },
   },
   plugins: [],
 }

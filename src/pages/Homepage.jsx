@@ -11,7 +11,7 @@ const Homepage = () => {
   return (
     <div>
       <TitleBar/>
-      {/* <Hero/> */}
+      <Hero/>
       {/* <ShortLinkSection /> */}
       {/* <AdvacedStats/> */}
       {/* <Boost/> */}
