@@ -10,14 +10,14 @@ import { MdMenu, MdClose } from "react-icons/md";
 /* eslint-disable no-unused-vars */
 const TitleBar = () => {
   
-  // using js to work on the hover effect since am struggling with the css method
+ 
   const [isfeature, setState] = useState(false);
   const [isPricing, setPricing] = useState(false);
   const [isResources, setResources] = useState(false);
   const [isLogin, setLogin] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
 
-//display menu on moble when clicked
+//display menu on mobile when clicked
 const handleMenu = () => {
   setMenuOpen(!isMenuOpen);
 };
@@ -29,6 +29,7 @@ const handleMenu = () => {
   };
 
   // I know this is funny but please am still learning, had to resolve to this since was finding it difficult ...lol
+  // after everything will rework on this using tailwindcss so take note
   const feature = {
     color: isfeature ? 'black' : 'gray',
   }
