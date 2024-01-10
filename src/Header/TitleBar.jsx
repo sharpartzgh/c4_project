@@ -118,46 +118,6 @@ const handleMenu = () => {
       </nav>
     </div>
   </header>
-
-
-
-
-
-
-  //  <header className='m-auto w-full flex justify-between py-4 px-10 sm:m-auto  items-center sm:relative'>
-  //   <div className='flex items-center gap-10'>
-  //     <h1 className=' text-[30px] font-extrabold'>Shortly</h1>
-  //       <nav className='desktop-menu sm:hidden '>
-  //           <ul className=' sm:hidden flex gap-5 '>
-  //             <NavLink to='/' style={{...LinkStyle, ...feature}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >Features</NavLink>
-  //             <NavLink to='/'  style={{...LinkStyle, ...Pricing}} onMouseEnter={PricingMouseEnter} onMouseLeave={PricingMouseLeave} >Pricing</NavLink>
-  //             <NavLink to='/'  style={{...LinkStyle, ...Resources}} onMouseEnter={ResourcesMouseEnter} onMouseLeave={ResourcesMouseLeave}>Resources</NavLink>
-  //           </ul>
-  //       </nav>
-  //   </div>
-  //   <div className=' '>
-  //         <ul className='flex gap-3 items-center  sm:hidden'> 
-  //           <NavLink to='/SignIn' style={{...LinkStyle, ...Login}} onMouseEnter={LoginMouseEnter} onMouseLeave={LoginMouseLeave} >Login</NavLink>
-  //           <NavLink to='/SignUp' className=' bg-[#2ACFCF] font-bold rounded-3xl py-1 px-5 text-white'>Sign Up</NavLink>
-  //         </ul>
-  //     </div>
-  //     <div className=" tablet:hidden" onClick={handleMenu}>
-  //         <MdMenu className=' text-gray-400 w-8 h-16 cursor-pointer'/>
-  //     </div>
-  //     <div className='mobile-menu relative inset-x-0 bottom-0 w-full rounded bg-[#3A3053]  tablet:hidden h-full'>
-  //     <nav className=' '>
-  //       <ul className=' flex flex-col gap-3 items-center font-bold text-white py-5 px-2'>
-  //           <NavLink to='/'>Features</NavLink>
-  //           <NavLink to='/' >Pricing</NavLink>
-  //           <NavLink to='/'>Resources</NavLink>
-  //           <hr className=' w-full'/>
-  //           <NavLink to='/SignIn' >Login</NavLink>
-  //           <NavLink to='/SignUp' className=' bg-[#2ACFCF] font-bold rounded-3xl py-1 px-5 text-white'>Sign Up</NavLink>
-  //       </ul>
-  //     </nav> 
-  //     </div>
-      
-  //  </header>
   )
 }
 
