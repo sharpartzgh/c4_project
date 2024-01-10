@@ -112,7 +112,7 @@ const handleMenu = () => {
           <NavLink to="/">Resources</NavLink>
           <hr className="w-full" />
           <NavLink to="/SignIn">Login</NavLink>
-          <NavLink to="/" className="bg-[#2ACFCF] font-bold rounded-3xl py-1 px-5 text-white">
+          <NavLink to="/" className="bg-[#2ACFCF] text-center font-bold rounded-3xl py-1 px-5 w-full text-white">
             Sign Up
           </NavLink>
         </ul>
